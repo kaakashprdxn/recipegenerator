@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe NoteTaker App</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'>
+  <link rel='stylesheet' href='https://bootswatch.com/4/yeti/bootstrap.min.css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-concierge-bell text-primary"></i> My<span class="text-primary">Recipe</span>Generator</h1>
+    <form id="recipes-form">
+      <div class="form-group">
+        <label for="title">Recipe Title</label>
+        <input type="text" id="title" class="form-control">
+      </div>
+      <div id="tag" class="recipe-id-row">
+        <span class="all-mail tagcontent">
+        </span>
+        <input type="text" id="ingrediants" placeholder="Ingredients Required..." class="enter-mail-id text">
+      </div>
+      <input type="submit" value="Add Recipe" class="btn btn-primary btn-block">
+    </form>
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th>Dish Name</th>
+          <th>Ingredents</th>
+        </tr>
+      </thead>
+      <tbody id="recipe-list"></tbody>
+    </table>
+  </div>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
